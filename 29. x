@@ -1,0 +1,9 @@
+valor = input ('Digite um valor: ')
+type (valor)
+if valor.replace('-', '', 1).isdigit():
+  valor = float(valor)
+  if valor.is_integer():
+    print('Número inteiro', valor)
+  else:
+    print ('Metade', (valor/2))
+else: print ('Tipo Inválido')
